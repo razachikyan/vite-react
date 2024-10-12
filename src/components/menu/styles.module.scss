@@ -1,3 +1,19 @@
+.cover {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: transparent
+    linear-gradient(90deg, #040404 0%, #040404fa 21%, #04040400 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.cover.active {
+  z-index: 50;
+  opacity: 1;
+}
+
 .menu {
   position: fixed;
   inset: 0;

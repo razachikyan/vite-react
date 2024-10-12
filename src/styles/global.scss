@@ -18,6 +18,11 @@ html {
     font-weight: 400;
     font-family: "Roboto", sans-serif;
 
+    &.preload * {
+      animation-duration: 0s !important;
+      -webkit-animation-duration: 0s !important;
+    }
+
     &::-webkit-scrollbar {
       width: 15px;
     }

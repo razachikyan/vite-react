@@ -1,4 +1,3 @@
-import { useState } from "react";
 import cx from "classnames";
 import data from "../../../public/data.json";
 import { TrendingList } from "../../components/trendingList";
@@ -8,11 +7,11 @@ import { formatDuration } from "../../utils/formatDuration";
 import styles from "./styles.module.scss";
 
 export const HomePage = () => {
-  const [menu, setMenu] = useState<boolean>(false);
   const { Featured, TrendingNow } = data;
+
   return (
-    <div onClick={() => setMenu(false)} className={styles.layout}>
-      <Menu open={menu} onOpen={() => setMenu(true)} />
+    <div className={styles.layout}>
+      <Menu />
       <div className={styles.central}>
         <span className={styles.subtitle}>MOVIE</span>
         <h1 className={styles.title}>{Featured.Title}</h1>
