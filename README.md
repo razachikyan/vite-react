@@ -10,7 +10,7 @@ This project is a web-based TV application developed using React.js. It features
 
 ## Technologies Used
 
-- **React.js**: JavaScript library for building user interfaces
+- **React.js**: A JavaScript library for building user interfaces
 - **Vite**: Build tool that provides a fast development experience
 - **TypeScript**: Superset of JavaScript that adds static types
 - **React Router**: For handling routing
@@ -38,7 +38,7 @@ This project is a web-based TV application developed using React.js. It features
    yarn
    ```
 
-4. Run locally
+4. Run the application locally
 
    ```bash
    npm run dev
@@ -54,7 +54,7 @@ This project is a web-based TV application developed using React.js. It features
    yarn build
    ```
 
-6. Stare the project
+6. Start the project
    ```bash
    npm start
    // or
