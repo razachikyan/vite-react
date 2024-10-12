@@ -1,0 +1,57 @@
+.container {
+  margin-top: auto;
+  height: 325px;
+  z-index: 10;
+}
+
+.name {
+  font-family: "Tajawal";
+  font-weight: 500;
+  font-size: 32px;
+  color: #f1f1f1;
+  margin-left: 200px;
+  margin-bottom: 15px;
+}
+
+.carousel {
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.list {
+  display: flex;
+  gap: 16px;
+  min-width: 100%;
+}
+
+.item {
+  background-color: aliceblue;
+  overflow: hidden;
+  width: 200px;
+  height: 278px;
+
+  &:first-child {
+    margin-left: 200px;
+  }
+
+  &:last-child {
+    margin-right: 200px;
+  }
+}
