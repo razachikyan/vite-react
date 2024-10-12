@@ -64,18 +64,17 @@ This project is a web-based TV application developed using React.js. It features
 ## Folder Structure
 
 /vite-react
-│
-├── /public
-├── /src
-│   ├── /components
-│   ├── /models
-│   ├── /pages
-│   ├── /styles
-│   ├── /utils
-│   ├── data.json
-│   └── main.tsx
-│   └── App.tsx
-│
-├── package.json
-├── index.html
-└── README.md
+├── /public               # Public assets
+├── /src                  # Source files
+│   ├── /components       # Reusable components
+│   ├── /models           # TypeScript interfaces and models
+│   ├── /pages            # Page components
+│   ├── /styles           # CSS/SCSS styles
+│   ├── /utils            # Utility functions
+│   ├── data.json         # JSON data file containing video data
+│   ├── main.tsx          # Entry point for the React application
+│   └── App.tsx           # Main application component
+├── package.json          # Project metadata and dependencies
+├── index.html            # HTML template for the app
+└── README.md             # Project documentation
+
