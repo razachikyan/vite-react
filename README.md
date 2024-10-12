@@ -1,21 +1,81 @@
-# React + TypeScript + Vite
+# TV Application with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web-based TV application developed using React.js. It features a user-friendly interface that allows users to explore a variety of video content, including movies and TV shows. The app includes dynamic components such as a main menu, featured video section, and a trending videos carousel.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## Table of Contents
 
-## Deploy Your Own
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Folder Structure](#folder-structure)
 
-Deploy your own Vite project with Vercel.
+## Technologies Used
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite-react&template=vite-react)
+- **React.js**: JavaScript library for building user interfaces
+- **Vite**: Build tool that provides a fast development experience
+- **TypeScript**: Superset of JavaScript that adds static types
+- **React Router**: For handling routing
+- **CSS/SCSS**: For styling the application
 
-_Live Example: https://vite-react-example.vercel.app_
+## Setup Instructions
 
-### Deploying From Your Terminal
+1. Clone the repository:
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+   ```bash
+   git clone https://github.com/razachikyan/vite-react.git
+   ```
 
-```shell
-$ vercel
-```
+2. Enter the project folder
+
+   ```bash
+   cd vite-react
+   ```
+
+3. Install dependencies
+
+   ```bash
+   npm i
+   // or
+   yarn
+   ```
+
+4. Run locally
+
+   ```bash
+   npm run dev
+   // or
+   yarn dev
+   ```
+
+5. Build the project
+
+   ```bash
+   npm run build
+   // or
+   yarn build
+   ```
+
+6. Stare the project
+   ```bash
+   npm start
+   // or
+   yarn start
+   ```
+
+## Folder Structure
+
+/vite-react
+│
+├── /public
+├── /src
+│   ├── /components
+│   ├── /models
+│   ├── /pages
+│   ├── /styles
+│   ├── /utils
+│   ├── data.json
+│   └── main.tsx
+│   └── App.tsx
+│
+├── package.json
+├── index.html
+└── README.md
