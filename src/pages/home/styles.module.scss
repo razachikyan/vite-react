@@ -10,12 +10,21 @@
   background-attachment: fixed;
   background-size: cover;
   padding-top: 180px;
+  position: relative;
+}
+
+.videoContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
 }
 
 .central {
   margin-left: 160px;
   max-width: 805px;
   color: #fff;
+  z-index: 100;
+  position: relative;
 }
 
 .subtitle {
@@ -78,17 +87,28 @@
 
 .more {
   background: transparent linear-gradient(128deg, #2727f5 0%, #001671 100%) 0%
-  0% no-repeat padding-box;
+    0% no-repeat padding-box;
   color: #f1f1f1;
 }
 
 .play {
   justify-content: flex-start;
   background: #f1f1f1;
-  color: #0C0C0C;
+  color: #0c0c0c;
   padding-left: 107px;
-  background-image: url('/icons/play.svg');
+  background-image: url("/icons/play.svg");
   background-repeat: no-repeat;
   background-position: 70px center;
   background-size: 30px;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.videoPlayer {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  inset: 0;
 }

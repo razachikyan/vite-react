@@ -1,22 +1,11 @@
 import React from "react";
+import { TrendingListProps } from "./types";
+
 import styles from "./styles.module.scss";
 
-interface ITrendingDataItem {
-  Id: string;
-  Title: string;
-  CoverImage: string;
-  TitleImage: string;
-  Date: string;
-  ReleaseYear: string;
-  MpaRating: string;
-  Category: string;
-  Duration: string;
-  VideoUrl: string;
-  Description: string;
-}
-
-export const TrendingList: React.FC<{ data: Array<ITrendingDataItem> }> = ({
+export const TrendingList: React.FC<TrendingListProps> = ({
   data,
+  onMovieClick,
 }) => {
   return (
     <div className={styles.container}>
@@ -27,7 +16,11 @@ export const TrendingList: React.FC<{ data: Array<ITrendingDataItem> }> = ({
           className={styles.list}
         >
           {data.map((item) => (
-            <li key={item.Id} className={styles.item}>
+            <li
+              key={item.Id}
+              className={styles.item}
+              onClick={() => onMovieClick(item)}
+            >
               <img
                 src={`images/${item.CoverImage}`}
                 alt={item.Title}
